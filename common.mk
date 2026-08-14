@@ -439,7 +439,7 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Dolby
-$(call inherit-product, vendor/oneplus/dolby/config.mk)
+# DISABLED dolby repo not public: $(call inherit-product, vendor/oneplus/dolby/config.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8550-common/sm8550-common-vendor.mk)
