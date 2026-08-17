@@ -34,6 +34,15 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 
+# 32-bit native ABI support (bionic/linker for arm32 ELF, no 32-bit zygote)
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_CPU_VARIANT := cortex-a55
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+# Preserve the OMX disable that core_64_bit_only.mk used to provide
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
