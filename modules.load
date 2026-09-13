@@ -26,6 +26,7 @@ hdmi_dlkm.ko
 horae_shell_temp.ko
 hvc_gunyah.ko
 i3c-master-msm-geni.ko
+ipam.ko
 ipa_clientsm.ko
 ipanetm.ko
 last_boot_reason.ko
